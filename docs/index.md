@@ -5,7 +5,7 @@ Specification for dilution refrigerator wiring configuration data in YAML format
 ## About This Spec
 
 cryo-wiring-spec defines a YAML data format for describing RF/microwave wiring configurations inside dilution refrigerators.
-It standardizes wiring configuration management so that the [CLI tool](https://github.com/cryo-wiring/cli) and [Web UI](https://github.com/cryo-wiring/app) can work with the data in a consistent way.
+It standardizes wiring configuration management so that the [cryo-wiring/cli](https://github.com/cryo-wiring/cli) and [cryo-wiring/app](https://github.com/cryo-wiring/app) can work with the data in a consistent way.
 
 ## Specification Contents
 
@@ -52,10 +52,10 @@ my-fridge-data/
 │       └── ...
 ```
 
-Use [cryo-wiring-template](https://github.com/cryo-wiring/template) to get started quickly.
+Use [cryo-wiring/template](https://github.com/cryo-wiring/template) to get started quickly.
 
 ## Related Repositories
 
-- [cryo-wiring-cli](https://github.com/cryo-wiring/cli) — Core library + CLI (reference implementation of this spec)
-- [cryo-wiring-app](https://github.com/cryo-wiring/app) — Web UI
-- [cryo-wiring-template](https://github.com/cryo-wiring/template) — Data repository template
+- [cryo-wiring/cli](https://github.com/cryo-wiring/cli) — Core library + CLI (reference implementation of this spec)
+- [cryo-wiring/app](https://github.com/cryo-wiring/app) — Web UI
+- [cryo-wiring/template](https://github.com/cryo-wiring/template) — Data repository template

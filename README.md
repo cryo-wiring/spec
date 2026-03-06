@@ -8,9 +8,9 @@ Specification for dilution refrigerator wiring configuration data in YAML format
 
 | Repository | Description |
 |------------|-------------|
-| [cryo-wiring-cli](https://github.com/cryo-wiring/cli) | Core library + CLI (reference implementation of this spec) |
-| [cryo-wiring-app](https://github.com/cryo-wiring/app) | Web UI |
-| [cryo-wiring-template](https://github.com/cryo-wiring/template) | Data repository template |
+| [cryo-wiring/cli](https://github.com/cryo-wiring/cli) | Core library + CLI (reference implementation of this spec) |
+| [cryo-wiring/app](https://github.com/cryo-wiring/app) | Web UI |
+| [cryo-wiring/template](https://github.com/cryo-wiring/template) | Data repository template |
 
 ## Spec Overview
 
