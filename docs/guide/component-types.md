@@ -69,7 +69,7 @@ gain_dB: 38
 
 ## Component Catalog
 
-Components can be defined in a `components.yaml` catalog and referenced by key name:
+All components **must** be defined in a `components.yaml` catalog and referenced by key name in wiring configurations:
 
 ```yaml
 # components.yaml
@@ -85,4 +85,27 @@ LNF-HEMT:
   gain_dB: 38
 ```
 
-These keys can then be used directly in wiring configurations instead of inline definitions.
+These keys are then used in wiring files — both in module definitions and per-line overrides (`add` / `remove`):
+
+```yaml
+# control.yaml
+modules:
+  ctrl:
+    stages:
+      4K:
+        - XMA-20dB       # ← catalog key reference
+      MXC:
+        - XMA-20dB
+        - Eccosorb
+
+lines:
+  - line_id: C00
+    qubit: Q00
+    module: ctrl
+    stages:
+      4K:
+        add:
+          - LPF-KL       # ← catalog key reference in override
+```
+
+Centralizing component definitions in the catalog ensures consistency across all wiring files and makes it easy to update a component's properties in one place.

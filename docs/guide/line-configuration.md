@@ -82,7 +82,7 @@ A line must use either a module reference **or** inline stages — not both simu
 
 ## Component References
 
-Within stage lists, components can be specified as:
+Within stage lists (modules, overrides, and flat format), components are specified as:
 
-1. **String key** — References a component defined in `components.yaml`
-2. **Inline object** — Full component definition with `type`, `model`, and type-specific fields
+1. **String key** (recommended) — References a component defined in `components.yaml`. All components should be registered in the catalog and referenced by key
+2. **Inline object** (allowed) — Full component definition with `type`, `model`, and type-specific fields. Useful in flat format or for one-off components not in the catalog

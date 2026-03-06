@@ -25,7 +25,7 @@ my-fridge-data/
 
 ## Key Concepts
 
-- **`components.yaml`** — Shared component catalog defining all available RF/microwave parts
+- **`components.yaml`** **(required)** — Shared component catalog defining all RF/microwave parts used in wiring configurations. All components must be registered here and referenced by key name in wiring files
 - **`templates/`** — Module templates that define default stage configurations per line type. Each template file uses the same format as the `modules` section in wiring files, so they can be imported and shared across cooldowns
 - **`current/`** — The active cooldown configuration being worked on
 - **`<YYYY-NNN>/`** — Immutable snapshots of past cooldowns (e.g., `2026-001`)
