@@ -22,8 +22,6 @@ extra_css = ["stylesheets/extra.css"]
 
 [project.theme]
 favicon = "assets/logo.png"
-
-[project.theme.icon]
 logo = "assets/logo.png"
 
 [project.theme.font]
